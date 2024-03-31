@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Daily Assistant</title>
+  </head>
+  <body>
+    <!-- home section -->
+    <section id="home">
+      <!-- set background some dark -->
+      <div class="layer">
+        <!-- home header -->
+        <header>
+          <!-- header waves -->
+          <div class="custom-shape-divider-top-1704572801">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity="1"
+                class="shape-fill"
+              ></path>
+              <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity="1"
+                class="shape-fill"
+              ></path>
+              <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+          <!-- navbar -->
+          <div class="navbar">
+            <!-- btn hello and read info about app -->
+            <button class="hello" role="button">
+              <span class="text">Hello</span><span>⚠️</span>
+            </button>
+            <!-- my linkedin account -->
+            <a href="https://www.linkedin.com/in/melshimi90/" target="_blank"
+              ><img src="assets/images/mElshimi Logo.png" alt=""
+            /></a>
+            <!-- contact info -->
+            <button class="contact">Contact</button>
+          </div>
+          <!-- show time and date -->
+          <div class="time">
+            <p class="clock">00:00:00</p>
+            <p class="date"></p>
+          </div>
+        </header>
+        <!-- home body -->
+        <main class="main">
+          <div class="container">
+            <!-- avoid margin collapsing -->
+            <div class="mt">
+              <!-- main body -->
+              <div class="main-body">
+                <!-- quote body -->
+                <div class="quote"></div>
+                <!-- to-do list body -->
+                <div class="to-do-list"></div>
+                <!-- home btn !-->
+              </div>
+              <div class="div-btn tooltip">
+                <button class="btn-hello" role="button">
+                  <a class="" href="#home">Hello </a>
+                </button>
+                <span class="tooltiptext">manage your task and quotes</span>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- section manage -->
+    <section class="mang-close" id="manage">
+      <div class="container">
+        <!-- manage body -->
+        <button class="btn-mang-close">❌</button>
+        <div class="manage-body">
+          <!-- manage quote -->
+          <div class="add-quotes">
+            <!-- task title -->
+            <h2>Every day is a new beginning, go ahead✨</h2>
+            <!-- input field -->
+            <input
+              class="input-f-quote"
+              type="text"
+              placeholder="add your quote"
+            />
+
+            <!-- btn submit -->
+            <input class="btn-add-quote" type="submit" value="add quote" />
+
+            <div class="btns-mange-quotes">
+              <button class="random-quotes" role="button">
+                Add 50 random quotes by dev
+              </button>
+              <button class="manage-quotes" role="button">Manage Quotes</button>
+            </div>
+
+            <!-- quotes model -->
+            <div class="quotes-model quotes-close">
+              <div class="head">
+                <div>Manage your Quotes</div>
+                <div class="btn-quotes-close">❌</div>
+              </div>
+              <div class="quotes-body"></div>
+              <div class="quotes-footer">
+                <button class="delete-all-quotes" role="button">
+                  Delete all Quotes
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- manage task -->
+          <div class="add-tasks">
+            <!-- task title -->
+            <h2>Have a nice day✨</h2>
+            <!-- input field -->
+            <input
+              class="input-f-task"
+              type="text"
+              placeholder="add your task"
+            />
+            <!-- btn submit -->
+            <input class="btn-add-task" type="submit" value="add task" />
+            <!-- <button class="btn-add-task" type="submit"  >add task</button> -->
+            <div>
+              <button class="missed-tasks" role="button">missed tasks</button>
+            </div>
+            <div class="missed-tasks-model missed-task-close">
+              <div class="head">
+                <div>missed tasks</div>
+                <div class="btn-missed-tasks-close">❌</div>
+              </div>
+              <div class="missed-body"></div>
+              <div class="missed-footer">
+                <button class="add-all-tasks" role="button">
+                  Add all tasks
+                </button>
+                <button class="delete-all-tasks" role="button">
+                  Delete all tasks
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- important modal -->
+    <div class="important imp-close">
+      <h2>Daily Assistant</h2>
+      <p>
+        Hello my friend, i can help you to organize and complete your daily
+        tasks, and inspiration you.
+      </p>
+      <p>have a nice and productive day✨</p>
+      <a href="https://www.linkedin.com/in/melshimi90/" target="_blank"
+        ><img src="assets/images/mElshimi Logo.png" alt=""
+      /></a>
+      <!-- <p>
+        Daily Assistant is an AP that helps you to organize and complete your
+        daily tasks.
+      </p> -->
+      <h4>
+        ⚠️This application depends on your browser local storage, so use one
+        browser to avoid any issues or confuse you⚠️
+      </h4>
+      <button>OK</button>
+    </div>
+
+    <!-- contact modal -->
+    <div class="contact-model con-close">
+      <div class="con">
+        <img src="assets/images/LinkedIn_icon.svg.png" alt="" />
+        <div class="ic">
+          <p>Linkedin Profile</p>
+          <h4>
+            <a href="https://www.linkedin.com/in/melshimi90/" target="_blank"
+              >linkedin.com/in/melshimi90</a
+            >
+          </h4>
+        </div>
+      </div>
+      <div class="con">
+        <img src="assets/images/phone-512.webp" alt="" />
+        <div class="ic">
+          <p>Phone</p>
+          <h4>+201004875542 (Mobile)</h4>
+        </div>
+      </div>
+      <div class="con">
+        <img src="assets/images/Circle-icons-mail.svg.png" alt="" />
+        <div class="ic">
+          <p>Email</p>
+          <h4>
+            <a href="mailto:mohamed.elshemy90@gmail.com" target="_blank"
+              >mohamed.elshemy90@gmail.com</a
+            >
+          </h4>
+        </div>
+      </div>
+      <button>OK</button>
+    </div>
+  
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
